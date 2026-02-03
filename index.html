@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Iluminadores</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
+<meta charset="UTF-8">
+<title>Iluminadores</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: #fff;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
 
-    .card {
-      border: 1px solid #eee;
-      padding: 16px;
-      text-align: center;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .card img {
-      width: 100%;
-      height: auto;
-    }
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
 
-    .title {
-      font-size: 14px;
-      font-weight: 600;
-      margin: 12px 0;
-      min-height: 40px;
-    }
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
 
-    .buttons {
-      display: flex;
-      gap: 8px;
-    }
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
 
-    .btn {
-      flex: 1;
-      padding: 10px;
-      font-size: 13px;
-      cursor: pointer;
-    }
+.buttons {
+  display: flex;
+  gap: 10px;
+}
 
-    .btn-outline {
-      background: #fff;
-      border: 1px solid #000;
-    }
+.btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
 
-    .btn-black {
-      background: #000;
-      color: #fff;
-      border: none;
-    }
-  </style>
+.btn-outline {
+  background: white;
+  border: 1px solid black;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+</style>
 </head>
+
 <body>
 
 <h1>Iluminadores</h1>
@@ -71,7 +83,7 @@
 <div class="grid">
 
   <div class="card">
-    <img src="https://dubellay.mx/cdn/shop/files/iluminador1.jpg" alt="">
+    <img src="https://via.placeholder.com/400x400?text=Iluminador+1">
     <div class="title">Iluminador Forever Shimmerin’ Bratz</div>
     <div class="buttons">
       <button class="btn btn-outline">Detalles</button>
@@ -80,7 +92,7 @@
   </div>
 
   <div class="card">
-    <img src="https://dubellay.mx/cdn/shop/files/iluminador2.jpg" alt="">
+    <img src="https://via.placeholder.com/400x400?text=Iluminador+2">
     <div class="title">Glow Stick Face & Body</div>
     <div class="buttons">
       <button class="btn btn-outline">Detalles</button>
@@ -89,7 +101,7 @@
   </div>
 
   <div class="card">
-    <img src="https://dubellay.mx/cdn/shop/files/iluminador3.jpg" alt="">
+    <img src="https://via.placeholder.com/400x400?text=Iluminador+3">
     <div class="title">Iluminador Líquido Ultra Glow</div>
     <div class="buttons">
       <button class="btn btn-outline">Detalles</button>
@@ -101,3 +113,4 @@
 
 </body>
 </html>
+
