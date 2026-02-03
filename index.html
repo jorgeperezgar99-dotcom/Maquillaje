@@ -6,45 +6,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 40px;
+  font-family: Helvetica, Arial, sans-serif;
   background: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 32px;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 60px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .card {
-  border: 1px solid #eee;
-  padding: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 30px 20px;
   text-align: center;
 }
 
-.card img {
+.image-box {
   width: 100%;
-  height: 280px;
-  object-fit: contain;
-  margin-bottom: 20px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .title {
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 20px;
-  min-height: 40px;
+  margin-bottom: 25px;
+  min-height: 38px;
 }
 
 .buttons {
@@ -54,61 +70,88 @@ h1 {
 
 .btn {
   flex: 1;
-  padding: 12px;
+  padding: 14px 0;
   font-size: 14px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .btn-outline {
-  background: white;
-  border: 1px solid black;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
 }
 
 .btn-black {
-  background: black;
-  color: white;
-  border: none;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
 }
 
-.btn:hover {
+.btn-black:hover {
   opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<h1>Iluminadores</h1>
+<div class="container">
+  <h1>Iluminadores</h1>
 
-<div class="grid">
+  <div class="grid">
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x400?text=Iluminador+1">
-    <div class="title">Iluminador Forever Shimmerin’ Bratz</div>
-    <div class="buttons">
-      <button class="btn btn-outline">Detalles</button>
-      <button class="btn btn-black">Lo quiero</button>
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x300?text=Iluminador">
+      </div>
+      <div class="title">Iluminador Forever Shimmerin’ Bratz</div>
+      <div class="buttons">
+        <button class="btn btn-outline">Detalles</button>
+        <button class="btn btn-black">Lo quiero</button>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x400?text=Iluminador+2">
-    <div class="title">Glow Stick Face & Body</div>
-    <div class="buttons">
-      <button class="btn btn-outline">Detalles</button>
-      <button class="btn btn-black">Lo quiero</button>
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x300?text=Iluminador">
+      </div>
+      <div class="title">Glow Stick Face & Body</div>
+      <div class="buttons">
+        <button class="btn btn-outline">Detalles</button>
+        <button class="btn btn-black">Lo quiero</button>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x400?text=Iluminador+3">
-    <div class="title">Iluminador Líquido Ultra Glow</div>
-    <div class="buttons">
-      <button class="btn btn-outline">Detalles</button>
-      <button class="btn btn-black">Lo quiero</button>
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x300?text=Iluminador">
+      </div>
+      <div class="title">Iluminador Líquido Ultra Glow</div>
+      <div class="buttons">
+        <button class="btn btn-outline">Detalles</button>
+        <button class="btn btn-black">Lo quiero</button>
+      </div>
     </div>
-  </div>
 
+  </div>
 </div>
 
 </body>
